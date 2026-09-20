@@ -1,0 +1,15 @@
+# Committed on purpose: everyone who clones this gets the same clean chrome.
+[server]
+headless = true
+port = 8501
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#2563eb"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f6f7f9"
+textColor = "#111418"
+font = "sans serif"

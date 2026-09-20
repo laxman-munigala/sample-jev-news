@@ -1,0 +1,18 @@
+[project]
+name = "jev-lab"
+version = "1.0.0"
+description = "A hands-on demo of TypeSafe's jev judgment model: typed classification over real news stories and X posts, with a Streamlit UI."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Laxman Munigala" }]
+dependencies = [
+    "typesafe-sdk>=0.7.0",   # the jev client — the only service this project talks to
+    "streamlit>=1.40",       # the UI
+    "python-dotenv>=1.0",    # reads TYPESAFE_API_KEY out of a .env file
+    "pandas>=2.2",           # Streamlit's table/chart input format
+]
+
+# Nothing here is importable as a package; `jevlab/` sits next to `app.py` and is imported
+# directly. uv still manages the environment and the lockfile.
+[tool.uv]
+package = false

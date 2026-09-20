@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+.DS_Store
+
+# The sample database IS committed — it is the point of the repo. Only its WAL sidecars are not.
+data/*.db-wal
+data/*.db-shm
